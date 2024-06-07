@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Hub from "./Hub";
+import { VercelClient } from "@vercel/postgres";
 
 export default function Home() {
   return (
