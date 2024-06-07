@@ -1,7 +1,11 @@
 import Image from "next/image";
+import Hub from "./Hub";
 
 export default function Home() {
   return (
-    <div>Hello World</div>
+    <div>
+      <Hub></Hub>
+      Hello World
+    </div>
   );
 }
