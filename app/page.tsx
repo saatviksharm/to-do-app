@@ -4,16 +4,20 @@ import { VercelClient } from "@vercel/postgres";
 import { prisma } from "./api/db";
 
 export default async function Home() {
-  const todos = await prisma.user.findMany();
-  //await prisma.user.create({ data: { name: "test", complete: false } });
+  //const todos = await prisma.todo.findMany();
+  //await prisma.todo.create({ data: { name: "test", complete: false } });
+  
+  /* Code for between <ul><ul/>
+    {todos.map((todo) => (
+          <li key={todo.id}>{todo.name}</li>
+        ))}  
+  */ 
   return (
     <div>
       <Hub></Hub>
       <h1 className="text-3xl px-5">Todos</h1>
       <ul className="pl-4">
-        {todos.map((todo) => (
-          <li key={todo.id}>{todo.name}</li>
-        ))}
+        
       </ul>
     </div>
   );
