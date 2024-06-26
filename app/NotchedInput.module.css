@@ -1,0 +1,33 @@
+.inputContainer {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .inputLabel {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 14px;
+    color: gray;
+    z-index: 1;
+  }
+  
+  .notchedInput {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .notchedInput::placeholder {
+    color: #aaa;
+  }
+  
